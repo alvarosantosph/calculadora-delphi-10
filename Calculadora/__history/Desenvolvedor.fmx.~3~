@@ -1,0 +1,50 @@
+object frm_desenvolvedor: Tfrm_desenvolvedor
+  Left = 0
+  Top = 0
+  Caption = 'Desenvolvedor'
+  ClientHeight = 138
+  ClientWidth = 388
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Calculadora B'#225'sica V 1.0'
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Udemy - Curso de Delphi 10'
+  end
+  object Label3: TLabel
+    Position.X = 88.000000000000000000
+    Position.Y = 88.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Desenvolvido por:'
+  end
+  object Label4: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 200.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Alvaro Santos'
+  end
+end
