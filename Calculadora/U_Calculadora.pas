@@ -54,6 +54,7 @@ type
     procedure btn_ceClick(Sender: TObject);
     procedure btn_cClick(Sender: TObject);
     procedure btn_desenvolvedorClick(Sender: TObject);
+    procedure habilitarDesabilitarOperacoes(operador : String);
   private
     { Private declarations }
   public
@@ -248,10 +249,7 @@ begin
   
     lb_operador.Text := '/';
 
-    btn_dividir.Enabled := false;
-    btn_multiplicar.Enabled := true;
-    btn_somar.Enabled := true;
-    btn_subtrair.Enabled := true;
+    habilitarDesabilitarOperacoes('divisao');
   end;
 end;
 
@@ -324,11 +322,8 @@ begin
     lb_n2.Text := '';
 
     btn_ponto.Enabled := true;
-    
-    btn_dividir.Enabled := true;
-    btn_multiplicar.Enabled := true;
-    btn_somar.Enabled := true;
-    btn_subtrair.Enabled := true;
+
+    habilitarDesabilitarOperacoes('padrao');
 
   end;
 end;
@@ -346,10 +341,7 @@ begin
   
     lb_operador.Text := '*';
 
-    btn_dividir.Enabled := true;
-    btn_multiplicar.Enabled := false;
-    btn_somar.Enabled := true;
-    btn_subtrair.Enabled := true;
+    habilitarDesabilitarOperacoes('multiplicacao');
   end;
 end;
 
@@ -390,10 +382,7 @@ begin
   
     lb_operador.Text := '+';
 
-    btn_dividir.Enabled := true;
-    btn_multiplicar.Enabled := true;
-    btn_somar.Enabled := false;
-    btn_subtrair.Enabled := true;
+    habilitarDesabilitarOperacoes('soma');
   end;
 
 end;
@@ -411,12 +400,48 @@ begin
     
     lb_operador.Text := '-';
 
+    habilitarDesabilitarOperacoes('subtracao');
+  end;
+  
+end;
+
+procedure TForm1.habilitarDesabilitarOperacoes(operador: String);
+begin
+  if operador = 'soma' then
+  begin
+    btn_dividir.Enabled := true;
+    btn_multiplicar.Enabled := true;
+    btn_somar.Enabled := false;
+    btn_subtrair.Enabled := true;
+  end
+  else if operador = 'subtracao' then
+  begin
     btn_dividir.Enabled := true;
     btn_multiplicar.Enabled := true;
     btn_somar.Enabled := true;
     btn_subtrair.Enabled := false;
-  end;
-  
+  end
+  else if operador = 'multiplicacao' then
+   begin
+      btn_dividir.Enabled := true;
+      btn_multiplicar.Enabled := false;
+      btn_somar.Enabled := true;
+      btn_subtrair.Enabled := true;
+   end
+   else if operador = 'divisao' then
+   begin
+      btn_dividir.Enabled := false;
+      btn_multiplicar.Enabled := true;
+      btn_somar.Enabled := true;
+      btn_subtrair.Enabled := true;
+   end
+   else
+   begin
+      btn_dividir.Enabled := true;
+      btn_multiplicar.Enabled := true;
+      btn_somar.Enabled := true;
+      btn_subtrair.Enabled := true;
+   end;
 end;
 
 end.
