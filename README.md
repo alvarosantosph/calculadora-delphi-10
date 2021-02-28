@@ -8,7 +8,9 @@ Aprendendo trabalhar com delphi 10.2 Berlin
     <img src="https://img.shields.io/badge/-Delphi-red?style=for-the-badge" alt="Delphi">
 </div>
 
-https://www.udemy.com/course/curso-de-delphi-10/
+<div align="left">
+    https://www.udemy.com/course/curso-de-delphi-10/
+</div>
 
 ## Contato
 
