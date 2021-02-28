@@ -12,8 +12,6 @@ Aprendendo trabalhar com delphi 10.2 Berlin
 
 https://www.udemy.com/course/curso-de-delphi-10/
 
-<br />
-
 ## Contato
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
