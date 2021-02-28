@@ -5,7 +5,7 @@ Aprendendo trabalhar com delphi 10.2 Berlin
 ```
 
 <div align="left">
-    <img src="https://img.shields.io/badge/-Delphi-red?style=for-the-badge" alt="Delphi">
+    <img src="https://img.shields.io/badge/-Delphi-crimson?style=for-the-badge" alt="Delphi">
 </div>
 
 <br />
